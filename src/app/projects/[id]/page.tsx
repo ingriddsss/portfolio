@@ -1,7 +1,28 @@
 "use client"
 import Image from "next/image";
 
-const data = { 
+interface Project {
+  img: string;
+  title: string;
+  role: string;
+  year: string;
+  description: string;
+  description2?: string; // Optional property
+  description3?: string; // Optional property
+  ss1: string;
+  ss2: string;
+  ss3: string;
+  ss4?: string; // Optional property
+  ss5?: string; // Optional property
+}
+
+interface ProjectProps {
+  params: {
+    id: keyof typeof data; // Ensure the id matches one of the keys in data
+  };
+}
+
+const data: Record<string, Project> = { 
   tsk: { 
     img: "/tsk-text-logo.png",
     title: "tsk.", 
@@ -13,13 +34,18 @@ const data = {
     ss2: "/tsk. ss 2.png",
     ss3: "/tsk. ss 3.png",
   }, 
-  sarkisova_care_web: { 
+  sarkisova_care_web: {
     img: "/hourglass.png",
     title: "Sarkisova Care Web",
     role: "Front-end Developer",
     year: "W.I.P.",
     description: "Currently crafting a website for a physician's private practice. ",
-    description2: "Launching soon!"
+    description2: "Launching soon!",
+    ss1: "",
+    ss2: "",
+    ss3: "",
+    ss4: "",
+    ss5: ""
   },
   glou_beauty_event_tracking: {
     img: "/glou.jpg",
@@ -30,6 +56,8 @@ const data = {
     ss1: "/glou-all-events.png",
     ss2: "/glou-types.png",
     ss3: "/glou-event-details.png",
+    ss4: "",
+    ss5: ""
   },
   sarkisova_logo: {
     img: "/new-sarkisova-logo-1.png",
@@ -38,6 +66,10 @@ const data = {
     year: "2024",
     description: "I designed a logo for a physician's private practice that is unlike any other, showcasing a unique blend of creativity and professionalism that captures the essence of the practice's mission and values.",
     ss2: "/logo with name and title .png",
+    ss1: "",
+    ss3: "",
+    ss4: "",
+    ss5: ""
   },
   raii_data_optimization: {
     img: "/RAII logo.png",
@@ -46,6 +78,11 @@ const data = {
     year: "2023",
     description: "We've enhanced the regulatory website for a non-profit organization dedicated to advancing human-centric and responsible artificial intelligence. The focus was on optimizing operational efficiency and user experience by refining data organization. This is done by writing code to sync the Firebase database to a Google Sheets file. The Google Sheets is then accessed by the regulatory website. Now, navigating the site is smoother and more intuitive, ensuring that visitors can easily access the valuable information they need to contribute to the ethical advancement of AI.",
     description3: "*for confidentiality, there are no screenshots available for viewing*",
+    ss1: "",
+    ss2: "",
+    ss3: "",
+    ss4: "",
+    ss5: ""
   },
   jammming: {
     img: "/jammming.png",
@@ -56,6 +93,8 @@ const data = {
     ss1: "/jammming1.png",
     ss2: "/jammming2.png",
     ss3: "/jammming3.png",
+    ss4: "",
+    ss5: ""
   },
   sunnyside_landing: {
     img: "/sunnyside-logo.png",
@@ -77,12 +116,22 @@ const data = {
     description: "Through this project, I cultivated and polished my front-end development skills while revamping a landing page for Sunnyside Agency, a fictitious company.",
     ss1: "/fylo1.png",
     ss2: "/fylo2.png",
+    ss3: "",
+    ss4: "",
+    ss5: ""
   }
 }
 
-export default function Project({params} : { params: { id: string}}) {
+export default function Project({params} : ProjectProps) {
 
-  const project : any = data[params.id];
+  // const project : any = data[params.id];
+
+  const project: Project | undefined = data[params.id];
+
+  if (!project) {
+    return <div>Loading...</div>; // Handle the case where project is not found
+  }
+
   return (
     <div className="project h-full flex flex-col justify-center items-center overflow-y-auto py-[8rem] max-lg:py-[8rem] max-md:[6rem]">
         <Image alt="project" className="w-[200px] max-md:w-[150px] max-lg:w-[175px]" src={project.img}/>
@@ -102,8 +151,8 @@ export default function Project({params} : { params: { id: string}}) {
         <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss1} />
         <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss2} />
         <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss3} />
-        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss4} />
-        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss5} />
+        {/* <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss4} /> */}
+        {/* <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss5} /> */}
     </div>
   )
 }
