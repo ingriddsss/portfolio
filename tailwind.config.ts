@@ -1,3 +1,4 @@
+import { Bricolage_Grotesque } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -13,6 +14,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        yellow: "#FFF6C9",
+        lightyellow: "#FDFFDB",
+        darkblue: "#0D1E31",
+        green: "#D3FFA3",
+        blue: "#A6FFDA",
+      },
+      fontFamily: {
+        'bricolagegrotesque': ["var(--font-bricolagegrotesque)", "sans-serif"],
+      }
     },
   },
   plugins: [],
