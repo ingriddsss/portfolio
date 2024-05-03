@@ -41,11 +41,11 @@ const data: Record<string, Project> = {
     year: "W.I.P.",
     description: "Currently crafting a website for a physician's private practice. ",
     description2: "Launching soon!",
-    ss1: "",
-    ss2: "",
-    ss3: "",
-    ss4: "",
-    ss5: ""
+    ss1: "/transparent-pic.png",
+    ss2: "/transparent-pic.png",
+    ss3: "/transparent-pic.png",
+    ss4: "/transparent-pic.png",
+    ss5: "/transparent-pic.png"
   },
   glou_beauty_event_tracking: {
     img: "/glou.jpg",
@@ -56,8 +56,8 @@ const data: Record<string, Project> = {
     ss1: "/glou-all-events.png",
     ss2: "/glou-types.png",
     ss3: "/glou-event-details.png",
-    ss4: "",
-    ss5: ""
+    ss4: "/transparent-pic.png",
+    ss5: "/transparent-pic.png"
   },
   sarkisova_logo: {
     img: "/new-sarkisova-logo-1.png",
@@ -66,10 +66,10 @@ const data: Record<string, Project> = {
     year: "2024",
     description: "I designed a logo for a physician's private practice that is unlike any other, showcasing a unique blend of creativity and professionalism that captures the essence of the practice's mission and values.",
     ss2: "/logo with name and title .png",
-    ss1: "",
-    ss3: "",
-    ss4: "",
-    ss5: ""
+    ss1: "/transparent-pic.png",
+    ss3: "/transparent-pic.png",
+    ss4: "/transparent-pic.png",
+    ss5: "/transparent-pic.png"
   },
   raii_data_optimization: {
     img: "/RAII logo.png",
@@ -78,11 +78,11 @@ const data: Record<string, Project> = {
     year: "2023",
     description: "We've enhanced the regulatory website for a non-profit organization dedicated to advancing human-centric and responsible artificial intelligence. The focus was on optimizing operational efficiency and user experience by refining data organization. This is done by writing code to sync the Firebase database to a Google Sheets file. The Google Sheets is then accessed by the regulatory website. Now, navigating the site is smoother and more intuitive, ensuring that visitors can easily access the valuable information they need to contribute to the ethical advancement of AI.",
     description3: "*for confidentiality, there are no screenshots available for viewing*",
-    ss1: "",
-    ss2: "",
-    ss3: "",
-    ss4: "",
-    ss5: ""
+    ss1: "/transparent-pic.png",
+    ss2: "/transparent-pic.png",
+    ss3: "/transparent-pic.png",
+    ss4: "/transparent-pic.png",
+    ss5: "/transparent-pic.png"
   },
   jammming: {
     img: "/jammming.png",
@@ -93,8 +93,8 @@ const data: Record<string, Project> = {
     ss1: "/jammming1.png",
     ss2: "/jammming2.png",
     ss3: "/jammming3.png",
-    ss4: "",
-    ss5: ""
+    ss4: "/transparent-pic.png",
+    ss5: "/transparent-pic.png"
   },
   sunnyside_landing: {
     img: "/sunnyside-logo.png",
@@ -116,9 +116,9 @@ const data: Record<string, Project> = {
     description: "Through this project, I cultivated and polished my front-end development skills while revamping a landing page for Sunnyside Agency, a fictitious company.",
     ss1: "/fylo1.png",
     ss2: "/fylo2.png",
-    ss3: "",
-    ss4: "",
-    ss5: ""
+    ss3: "/transparent-pic.png",
+    ss4: "/transparent-pic.png",
+    ss5: "/transparent-pic.png"
   }
 }
 
@@ -134,7 +134,7 @@ export default function Project({params} : ProjectProps) {
 
   return (
     <div className="project h-full flex flex-col justify-center items-center overflow-y-auto py-[8rem] max-lg:py-[8rem] max-md:[6rem]">
-        <Image alt="project" className="w-[200px] max-md:w-[150px] max-lg:w-[175px]" src={project.img}/>
+        <Image alt="project" className="w-[200px] max-md:w-[150px] max-lg:w-[175px]" src={project.img} width={200} height={200}/>
         <div className="bg-darkblue rounded-xl w-[40%] max-md:w-[70%] max-lg:w-[50%] px-10 py-5 my-10">
             <h3 className="title text-green text-center text-2xl font-bold pt-2">{project.title}</h3>
             <div className="py-1 flex justify-center items-center gap-3 font-bold">
@@ -148,9 +148,9 @@ export default function Project({params} : ProjectProps) {
             <p className="description text-center text-gray-500">{project.description3}</p>
         </div>
         {/* <hr className="bg-gray-900 bg-opacity-65 w-[60%]"/> */}
-        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss1} />
-        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss2} />
-        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss3} />
+        <Image alt="" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss1} width={1000} height={900}/>
+        <Image alt="" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss2} width={1000} height={900}/>
+        <Image alt="" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss3} width={1000} height={900}/>
         {/* <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss4} /> */}
         {/* <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss5} /> */}
     </div>
