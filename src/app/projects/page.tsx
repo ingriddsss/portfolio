@@ -3,13 +3,13 @@ import Image from "next/image"
 
 export default function Projects() {
   return (
-    <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] lg:pt-[15rem] overflow-y-auto">
+    <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] max-lg:pt-[15rem] max-2xl:pt-[17rem] overflow-y-auto">
         <div className="h-screen">
         <h1 className="text-yellow font-bold text-center text-2xl">Check out the projects that I've worked on!</h1>
         
 
-        <section className="w-full py-5 max-md:py-10 max-lg:py-18">
-        <div className="container grid gap-10 px-4 py-10 md:px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+        <section className="w-full py-5 max-md:py-10 max-lg:py-18 max-sm:w-[85%] max-sm:m-auto">
+        <div className="container grid gap-y-20 gap-x-16 px-4 py-10 md:px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
           <div className="relative group overflow-hidden rounded-lg">
             <Link className="absolute inset-0 z-10" href="/projects/tsk">
               <span className="sr-only">View Project</span>
