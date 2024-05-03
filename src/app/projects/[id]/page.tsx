@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 
 const data = { 
   tsk: { 
@@ -81,11 +82,10 @@ const data = {
 
 export default function Project({params} : { params: { id: string}}) {
 
-
-  const project : any = data[params.id]
+  const project : any = data[params.id];
   return (
     <div className="project h-full flex flex-col justify-center items-center overflow-y-auto py-[8rem] max-lg:py-[8rem] max-md:[6rem]">
-        <img className="w-[200px] max-md:w-[150px] max-lg:w-[175px]" src={project.img}/>
+        <Image alt="project" className="w-[200px] max-md:w-[150px] max-lg:w-[175px]" src={project.img}/>
         <div className="bg-darkblue rounded-xl w-[40%] max-md:w-[70%] max-lg:w-[50%] px-10 py-5 my-10">
             <h3 className="title text-green text-center text-2xl font-bold pt-2">{project.title}</h3>
             <div className="py-1 flex justify-center items-center gap-3 font-bold">
@@ -99,11 +99,11 @@ export default function Project({params} : { params: { id: string}}) {
             <p className="description text-center text-gray-500">{project.description3}</p>
         </div>
         {/* <hr className="bg-gray-900 bg-opacity-65 w-[60%]"/> */}
-        <img className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss1} />
-        <img className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss2} />
-        <img className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss3} />
-        <img className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss4} />
-        <img className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss5} />
+        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss1} />
+        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss2} />
+        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss3} />
+        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss4} />
+        <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss5} />
     </div>
   )
 }

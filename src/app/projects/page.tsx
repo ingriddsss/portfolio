@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Projects() {
   return (
@@ -13,7 +14,7 @@ export default function Projects() {
             <Link className="absolute inset-0 z-10" href="/projects/tsk">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="tsk."
               className="object-cover max-w-[45%] m-auto h-60"
               height={300}
@@ -33,7 +34,7 @@ export default function Projects() {
             <Link className="absolute inset-0 z-10" href="/projects/sarkisova_care_web">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="Sarkisova Care Web"
               className="object-cover w-full h-60"
               height={300}
@@ -53,7 +54,7 @@ export default function Projects() {
             <Link className="absolute inset-0 z-10" href="/projects/glou_beauty_event_tracking">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="Glou Beauty Event Tracking Web"
               className="object-cover w-full h-60"
               height={300}
@@ -74,7 +75,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
             <Link className="absolute inset-0 z-10" href="/projects/sarkisova_logo">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="Sarkisova Logo"
               className="object-cover w-[65%] m-auto h-60"
               height={300}
@@ -94,7 +95,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
             <Link className="absolute inset-0 z-10" href="/projects/raii_data_optimization">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="RAII Data Optimization"
               className="object-cover w-full h-60"
               height={300}
@@ -114,7 +115,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
             <Link className="absolute inset-0 z-10" href="/projects/jammming">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="Jammming"
               className="object-cover w-full h-60"
               height={300}
@@ -134,7 +135,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
             <Link className="absolute inset-0 z-10" href="/projects/sunnyside_landing">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="Sunnyside Agency Landing"
               className="object-cover w-full h-60"
               height={300}
@@ -154,7 +155,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
             <Link className="absolute inset-0 z-10" href="/projects/fylo_landing">
               <span className="sr-only">View Project</span>
             </Link>
-            <img
+            <Image
               alt="Fylo Landing"
               className="object-cover w-[55%] m-auto h-60"
               height={300}
