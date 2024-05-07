@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Projects() {
   return (
-    <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] max-lg:pt-[15rem] max-2xl:pt-[17rem] overflow-y-auto xl:pt-[18rem] xl:bg-blue">
+    <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] max-lg:pt-[15rem] max-2xl:pt-[17rem] overflow-y-auto xl:pt-[18rem]">
         <div className="h-screen">
         <h1 className="text-yellow font-bold text-center text-2xl">Check out the projects that I've worked on!</h1>
         
