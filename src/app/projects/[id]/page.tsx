@@ -1,4 +1,6 @@
 "use client"
+import Navbar from "@/components/Navbar";
+import Socials from "@/components/Socials";
 import Image from "next/image";
 
 interface Project {
@@ -34,31 +36,41 @@ const data: Record<string, Project> = {
     ss2: "/tsk. ss 2.png",
     ss3: "/tsk. ss 3.png",
   }, 
-  sarkisova_care_web: {
-    img: "/hourglass.png",
-    title: "Sarkisova Care Web",
+  booked: { 
+    img: "/booked-full-cropped.png",
+    title: "Booked", 
     role: "Front-end Developer",
-    year: "W.I.P.",
-    description: "Currently crafting a website for a physician's private practice. ",
-    description2: "Launching soon!",
-    ss1: "/transparent-pic.png",
-    ss2: "/transparent-pic.png",
-    ss3: "/transparent-pic.png",
-    ss4: "/transparent-pic.png",
-    ss5: "/transparent-pic.png"
-  },
-  glou_beauty_event_tracking: {
-    img: "/glou.jpg",
-    title: "Glou Beauty Event Tracking",
-    role: "Front-end Developer",
-    year: "2023",
-    description: "I developed an event tracking platform for Glou Beauty, designed to meticulously catalog various interactions occurring on the main marketplace website. These interactions range from routine clicks like 'Add to Bag' to specific engagements with individual products. The platform offers a comprehensive view of all recorded events, allowing users to effortlessly filter them by release or type. Additionally, users can delve deeper into any event by simply clicking on it, triggering a separate page to unveil detailed specifications.",
-    ss1: "/glou-all-events.png",
-    ss2: "/glou-types.png",
-    ss3: "/glou-event-details.png",
-    ss4: "/transparent-pic.png",
-    ss5: "/transparent-pic.png"
-  },
+    year: "2024",
+    description: "A book logging app allows users to search for books they are reading and add them to their personal collection, helping them keep track of their literary journey. Within their collection, users can select a book and make as many notes as they wish, customizing their reading experience and reflections. The app ensures that all data is stored locally, providing both convenience and privacy for users to manage their book collection and notes securely.",
+    ss1: "/booked-2.png",
+    ss2: "/booked-3.png",
+    ss3: "/booked-4.png",
+  }, 
+  // sarkisova_care_web: {
+  //   img: "/hourglass.png",
+  //   title: "Sarkisova Care Web",
+  //   role: "Front-end Developer",
+  //   year: "W.I.P.",
+  //   description: "Currently crafting a website for a physician's private practice. ",
+  //   description2: "Launching soon!",
+  //   ss1: "/transparent-pic.png",
+  //   ss2: "/transparent-pic.png",
+  //   ss3: "/transparent-pic.png",
+  //   ss4: "/transparent-pic.png",
+  //   ss5: "/transparent-pic.png"
+  // },
+  // glou_beauty_event_tracking: {
+  //   img: "/glou.jpg",
+  //   title: "Glou Beauty Event Tracking",
+  //   role: "Front-end Developer",
+  //   year: "2023",
+  //   description: "I developed an event tracking platform for Glou Beauty, designed to meticulously catalog various interactions occurring on the main marketplace website. These interactions range from routine clicks like 'Add to Bag' to specific engagements with individual products. The platform offers a comprehensive view of all recorded events, allowing users to effortlessly filter them by release or type. Additionally, users can delve deeper into any event by simply clicking on it, triggering a separate page to unveil detailed specifications.",
+  //   ss1: "/glou-all-events.png",
+  //   ss2: "/glou-types.png",
+  //   ss3: "/glou-event-details.png",
+  //   ss4: "/transparent-pic.png",
+  //   ss5: "/transparent-pic.png"
+  // },
   sarkisova_logo: {
     img: "/new-sarkisova-logo-1.png",
     title: "Sarkisova Logo",
@@ -71,19 +83,19 @@ const data: Record<string, Project> = {
     ss4: "/transparent-pic.png",
     ss5: "/transparent-pic.png"
   },
-  raii_data_optimization: {
-    img: "/RAII logo.png",
-    title: "Responsible AI Institute Data Optimization",
-    role: "Software Engineer",
-    year: "2023",
-    description: "We've enhanced the regulatory website for a non-profit organization dedicated to advancing human-centric and responsible artificial intelligence. The focus was on optimizing operational efficiency and user experience by refining data organization. This is done by writing code to sync the Firebase database to a Google Sheets file. The Google Sheets is then accessed by the regulatory website. Now, navigating the site is smoother and more intuitive, ensuring that visitors can easily access the valuable information they need to contribute to the ethical advancement of AI.",
-    description3: "*for confidentiality, there are no screenshots available for viewing*",
-    ss1: "/transparent-pic.png",
-    ss2: "/transparent-pic.png",
-    ss3: "/transparent-pic.png",
-    ss4: "/transparent-pic.png",
-    ss5: "/transparent-pic.png"
-  },
+  // raii_data_optimization: {
+  //   img: "/RAII logo.png",
+  //   title: "Responsible AI Institute Data Optimization",
+  //   role: "Software Engineer",
+  //   year: "2023",
+  //   description: "We've enhanced the regulatory website for a non-profit organization dedicated to advancing human-centric and responsible artificial intelligence. The focus was on optimizing operational efficiency and user experience by refining data organization. This is done by writing code to sync the Firebase database to a Google Sheets file. The Google Sheets is then accessed by the regulatory website. Now, navigating the site is smoother and more intuitive, ensuring that visitors can easily access the valuable information they need to contribute to the ethical advancement of AI.",
+  //   description3: "*for confidentiality, there are no screenshots available for viewing*",
+  //   ss1: "/transparent-pic.png",
+  //   ss2: "/transparent-pic.png",
+  //   ss3: "/transparent-pic.png",
+  //   ss4: "/transparent-pic.png",
+  //   ss5: "/transparent-pic.png"
+  // },
   jammming: {
     img: "/jammming.png",
     title: "Jammming",
@@ -96,30 +108,30 @@ const data: Record<string, Project> = {
     ss4: "/transparent-pic.png",
     ss5: "/transparent-pic.png"
   },
-  sunnyside_landing: {
-    img: "/sunnyside-logo.png",
-    title: "Sunnyside Agency Landing",
-    role: "Front-end Developer",
-    year: "2022",
-    description: "With this project, I was able to hone my front-end development skills and recreate a landing page for a mock company called Sunnyside Agency. ",
-    ss1: "/sunnyside1.png",
-    ss2: "/sunnyside2.png",
-    ss3: "/sunnyside3.png",
-    ss4: "/sunnyside4.png",
-    ss5: "/sunnyside5.png",
-  },
-  fylo_landing: {
-    img: "/fylo-logo.png",
-    title: "Fylo Landing",
-    role: "Front-end Developer",
-    year: "2022",
-    description: "Through this project, I cultivated and polished my front-end development skills while revamping a landing page for Sunnyside Agency, a fictitious company.",
-    ss1: "/fylo1.png",
-    ss2: "/fylo2.png",
-    ss3: "/transparent-pic.png",
-    ss4: "/transparent-pic.png",
-    ss5: "/transparent-pic.png"
-  }
+  // sunnyside_landing: {
+  //   img: "/sunnyside-logo.png",
+  //   title: "Sunnyside Agency Landing",
+  //   role: "Front-end Developer",
+  //   year: "2022",
+  //   description: "With this project, I was able to hone my front-end development skills and recreate a landing page for a mock company called Sunnyside Agency. ",
+  //   ss1: "/sunnyside1.png",
+  //   ss2: "/sunnyside2.png",
+  //   ss3: "/sunnyside3.png",
+  //   ss4: "/sunnyside4.png",
+  //   ss5: "/sunnyside5.png",
+  // },
+  // fylo_landing: {
+  //   img: "/fylo-logo.png",
+  //   title: "Fylo Landing",
+  //   role: "Front-end Developer",
+  //   year: "2022",
+  //   description: "Through this project, I cultivated and polished my front-end development skills while revamping a landing page for Sunnyside Agency, a fictitious company.",
+  //   ss1: "/fylo1.png",
+  //   ss2: "/fylo2.png",
+  //   ss3: "/transparent-pic.png",
+  //   ss4: "/transparent-pic.png",
+  //   ss5: "/transparent-pic.png"
+  // }
 }
 
 export default function Project({params} : ProjectProps) {
@@ -151,7 +163,7 @@ export default function Project({params} : ProjectProps) {
         <Image alt="" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss1} width={1000} height={900}/>
         <Image alt="" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss2} width={1000} height={900}/>
         <Image alt="" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss3} width={1000} height={900}/>
-        {/* <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss4} /> */}
+        {/* <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss4} width={1000} height={900} /> */}
         {/* <Image alt="screenshots" className="rounded-xl w-[50%] max-md:w-[65%] max-sm:w-[75%] py-10" src={project.ss5} /> */}
     </div>
   )

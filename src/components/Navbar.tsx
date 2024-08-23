@@ -6,6 +6,7 @@ export default function Navbar() {
       <Link href="/"><img src="/updated-port-logo.png" className="w-[20%] max-w-[110px] min-w-[100px]"/></Link>
       <div className="flex justify-between gap-8">
         <Link href="/about" className="text-yellow font-bold">About</Link>
+        <Link href="/experience" className="text-yellow font-bold">Experience</Link>
         <Link href="/projects" className="text-yellow font-bold">Projects</Link>
       </div>
     </section>

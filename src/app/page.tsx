@@ -1,3 +1,5 @@
+import Navbar from "@/components/Navbar";
+import Socials from "@/components/Socials";
 import Image from "next/image";
 
 export default function Home() {

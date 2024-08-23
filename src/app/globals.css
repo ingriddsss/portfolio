@@ -31,7 +31,7 @@ body {
   background-attachment: fixed;
 }
 
-.about, .projects, .project {
+.about, .projects, .project, .experience {
   background-image: url('/bbblurry (2).svg');
   /* background-size: 100vh 100vw; */
   background-size: cover;
