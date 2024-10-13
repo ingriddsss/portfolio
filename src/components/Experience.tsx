@@ -136,7 +136,7 @@ export default function Experience() {
             experiences.map((x, i) => (
                 <div 
                     key={i} 
-                    className="experience-item text-yellow flex max-lg:flex-col justify-center items-center gap-5 max-w-[1000px] w-[85%] max-lg:w-[70%] max-md:w-[75%] max-sm:w-[85%] py-8 m-auto hover:bg-slate-800 hover:bg-opacity-50 rounded-lg my-5 transition ease-in-out duration-500"
+                    className="experience-item text-yellow flex max-lg:flex-col justify-center items-center gap-5 max-w-[1000px] w-[85%] max-lg:w-[70%] max-md:w-[75%] max-sm:w-[85%] py-8 m-auto bg-slate-800 bg-opacity-40 rounded-lg my-5 transition ease-in-out duration-500"
                 >
                     <h3 className="font-bold text-[1.5rem] text-green w-[20%] max-lg:w-[50%] max-lg:text-center">{x.title}</h3>
                     <div className="w-[60%]">

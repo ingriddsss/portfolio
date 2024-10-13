@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { PiArrowUpRightBold } from "react-icons/pi";
 import { isAbsolute } from "path";
 
 gsap.registerPlugin(ScrollTrigger); // Register the ScrollTrigger plugin
@@ -103,7 +104,10 @@ export default function Projects() {
               }}
               width={400}
             /> */}
-            <h3 className="project-name text-yellow text-xl">Booked</h3>
+            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+                Booked 
+                <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </h3>
             <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               {/* <h3 className="font-semibold text-lg text-green md:text-xl">Booked</h3> */}
               <p className="project-text text-sm text-lightyellow">A book logging app allows users to search for boots they are reading and add them to their personal collection. Within their collection, users can select a book and make as many notes as they wish. All data is stored locally for convenience and privacy.</p>
@@ -127,7 +131,11 @@ export default function Projects() {
               }}
               width={400}
             /> */}
-            <h3 className="project-name text-yellow text-xl">tsk.</h3>
+            {/* <h3 className="project-name text-yellow text-xl">tsk.</h3> */}
+            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+                tsk. 
+                <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </h3>
             <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               {/* <h3 className="font-semibold text-lg text-green md:text-xl">tsk.</h3> */}
               <p className="text-sm text-lightyellow">A progressive web app with ReactJS, Vite, and Tailwind CSS, emphasizing offline accessibility, privacy, and innovative features, gaining traction with a growing community of daily users.</p>
@@ -196,7 +204,11 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
               }}
               width={400}
             /> */}
-            <h3 className="project-name text-yellow text-xl">Sarkisova Logo</h3>
+            {/* <h3 className="project-name text-yellow text-xl">Sarkisova Logo</h3> */}
+            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+                Sarkisova Logo 
+                <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </h3>
             <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               {/* <h3 className="font-semibold text-lg text-green md:text-xl">Sarkisova Logo</h3> */}
               <p className="text-sm text-lightyellow">I crafted a distinctive logo for a physician's practice, balancing creativity and professionalism to reflect their mission and values.</p>
@@ -244,7 +256,11 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
               }}
               width={400}
             /> */}
-            <h3 className="project-name text-yellow text-xl">Jammming</h3>
+            {/* <h3 className="project-name text-yellow text-xl">Jammming</h3> */}
+            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+                Jammming 
+                <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </h3>
             <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               {/* <h3 className="font-semibold text-lg text-green md:text-xl">Jammming</h3> */}
               <p className="text-sm text-lightyellow">Jammming is a user-friendly web app enabling song lookup, playlist creation, and direct saving to Spotify accounts.</p>
