@@ -29,7 +29,7 @@ export default function Contact() {
     }, [])
 
     return (
-        <section className="relative contact w-screen mt-52">
+        <section className="relative contact w-screen mt-52 max-md:mt-84">
             <div className="contact-info mt-[10rem] mb-48 py-8 px-16 rounded-lg bg-gray-600 bg-opacity-25 transition-transform duration-300 hover:scale-110 shadow-lg shadow-gray-800 hover:shadow-gray-700">
                 <p className="text-[1.5rem] text-yellow text-center">Let's connect!</p>
                 <div className="socials flex justify-center items-center gap-5 py-5">

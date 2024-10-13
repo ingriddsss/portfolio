@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/Socials";
 import mainfont from 'next/font/local';
-import accentfont from 'next/font/local'; // Updated import
+import accentfont from 'next/font/local'; 
 
 // const inter = Inter({ subsets: ["latin"] });
 
