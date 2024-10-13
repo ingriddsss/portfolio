@@ -22,7 +22,8 @@ const config: Config = {
         blue: "#A6FFDA",
       },
       fontFamily: {
-        'bricolagegrotesque': ["var(--font-bricolagegrotesque)", "sans-serif"],
+        bricolagegrotesque: ["var(--font-bricolagegrotesque)", "sans-serif"],
+        ahganirya: ["var(--font-ahganirya)", "sans-serif"],
       }
     },
   },

@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/Socials";
 import mainfont from 'next/font/local';
-
+import accentfont from 'next/font/local'; // Updated import
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +14,16 @@ import mainfont from 'next/font/local';
 //   variable: '--font-bricolagegrotesque',
 // });
 
+const ahganirya = accentfont({
+  src: [
+    {
+      path: "../../public/fonts/AhganiryaPersonalUse-Yznaj.ttf",
+      weight: "400"
+    }
+  ],
+  variable: "--font-ahganirya"
+})
+
 const bricolagegrotesque = mainfont({
   src: [
     {
@@ -21,8 +31,10 @@ const bricolagegrotesque = mainfont({
       weight: "500"
     }
   ],
-  variable: "--font-nalieta"
+  variable: "--font-bricolagegrotesque"
 })
+
+
 
 export const metadata: Metadata = {
   title: "Ingrid De Silva",
@@ -41,13 +53,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bricolagegrotesque.className}`}>
+      <body className={`${ahganirya.className} ${bricolagegrotesque.className}`}>
         <div className="flex w-full min-h-screen">
-        <Navbar />
-        <div className="flex-1 bg-slate-800 justify-center">
-          {children}
-        </div>
-        <Socials />
+          {/* <Navbar /> */}
+          <div className="flex-1 justify-center">
+            {children}
+          </div>
+          {/* <Socials /> */}
         </div>
       </body>
     </html>

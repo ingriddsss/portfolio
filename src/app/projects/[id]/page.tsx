@@ -145,8 +145,9 @@ export default function Project({params} : ProjectProps) {
   }
 
   return (
-    <div className="project h-full flex flex-col justify-center items-center overflow-y-auto py-[8rem] max-lg:py-[8rem] max-md:[6rem]">
-        <Image alt="project" className="w-[200px] max-md:w-[150px] max-lg:w-[175px]" src={project.img} width={200} height={200}/>
+    <div className="specific-project h-full flex flex-col justify-center items-center overflow-y-auto pt-[1rem] pb-[6rem] max-lg:py-[8rem] max-md:[6rem] bg-gray-600 bg-opacity-[30%]">
+        <Navbar />
+        <Image alt="project" className="w-[200px] max-md:w-[150px] max-lg:w-[175px] pt-24" src={project.img} width={200} height={200}/>
         <div className="bg-darkblue rounded-xl w-[40%] max-md:w-[70%] max-lg:w-[50%] px-10 py-5 my-10">
             <h3 className="title text-green text-center text-2xl font-bold pt-2">{project.title}</h3>
             <div className="py-1 flex justify-center items-center gap-3 font-bold">

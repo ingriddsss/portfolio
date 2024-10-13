@@ -15,33 +15,191 @@
 } */
 
 body {
-  background: rgb(0,11,38);
-  background: linear-gradient(180deg, rgba(0,11,38,1) 0%, rgba(28,55,61,1) 100%);
+  background: #000b26;
+  /* background: linear-gradient(180deg, rgba(0,11,38,1) 0%, rgba(28,55,61,1) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  overflow-x: hidden;
 }
 
-.home {
+/* .home {
   background-image: url('/bbblurry (1).svg');
   background-size: 100vh 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+} */
+
+.home {
+  width: 100vw;
 }
 
-.about, .projects, .project, .experience {
+.blob-case {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* .blob-case Image {
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
+
+
+/* .about, .projects, .project, .experience {
   background-image: url('/bbblurry (2).svg');
-  /* background-size: 100vh 100vw; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+} */
+
+.specific-project {
+  background-image: url('/bbblurry (2).svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} 
+
+/* .experience {
+  background-image: url('/dual-bbblurry.svg');
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: fit-content;
+} */
+
+.hero-info {
+  /* position: relative; */
+  /* top: 50%;  */
+  /* transform: translateY(-50%);  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: pink; */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.name {
+  font-family: 'Ahganirya', sans-serif; /* Adjust as necessary */
+  font-size: 2.2rem;
+  text-shadow: 0 0 5px rgba(146, 238, 215, 0.7),
+               0 0 10px rgba(240, 240, 166, 0.5); 
+}
+
+.hero-info h3 {
+  padding-top: 2.4rem;
+}
+
+.about {
+  position: relative;
+  height: calc(100vh - 100%); /* Adjust height to be below .hero-info */
+  top: 100%; 
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* background-color: lightblue; */
+  /* padding-top: 10rem; */
+  height: 110vh;
+}
+
+.header-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-tag, .project-header-tag {
+  font-family: 'Ahganirya', sans-serif; /* Adjust as necessary */
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px rgba(146, 238, 215, 0.7), 
+               0 0 10px rgba(240, 240, 166, 0.5); 
+}
+
+.projects {
+  width: fit-content;
+  overflow: visible;
+}
+
+.project-name {
+  font-family: 'Ahganirya', sans-serif; /* Adjust as necessary */
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(240, 240, 166, 0.5);
+  overflow: visible;
+}
+
+.project:hover .project-name {
+  text-shadow: 0 0 5px rgba(146, 238, 215, 0.7), 
+               0 0 10px rgba(240, 240, 166, 0.5); 
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  color: #FFF6C9;
+}
+
+.project-description {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0; 
+  height: 0;
+  transition: visibility 0s 0.3s, height 0.3s ease, opacity 0.3s ease; /* Added transition for opacity */
+}
+
+.project:hover .project-description {
+  /* display: block; */
+  visibility: visible;
+  height: auto;
+  opacity: 1; /* Fade in to opacity 1 */
+  transition: visibility 0s, height 0.3s ease, opacity 0.3s ease; /* Adjusted transition */
+}
+
+.project-text {
+  visibility: hidden;
+  opacity: 0; /* Start with opacity 0 */
+  transition: visibility 0s 0.3s, opacity 0.3s ease; /* Added transition for opacity */
+}
+
+.project:hover .project-text {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1; /* Fade in to opacity 1 */
+  transition: visibility 0s, opacity 0.3s ease; /* Adjusted transition */
+}
+
+
+.socials a:hover {
+  text-shadow: 0 0 5px rgba(146, 238, 215, 0.7), 
+                0 0 10px rgba(240, 240, 166, 0.5); 
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.green-blob-2 {
+  transform: scale(2);
+}
+
+.blob-case-contact {
+  /* width: 100vw; */
+}
+
+.contact-info {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.contact {
+  background-image: url('/yellow-bbblurry.svg');
+  background-size: cover;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  overflow: visible;
 }
