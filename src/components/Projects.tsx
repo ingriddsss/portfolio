@@ -73,8 +73,8 @@ export default function Projects() {
 
   return (
     <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] max-lg:pt-[15rem] max-2xl:pt-[17rem] xl:pt-[18rem] pb-15 font-bricolagegrotesque">
-        <div className="blob-case flex justify-center">
-          <Image className="green-blob-2 scale-[1.8] absolute left-3/4 top-1/2 transform -translate-x-[30%] -translate-y-1/2 overflow-x-hidden" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
+        <div className="blob-case-projects flex justify-center items-center relative w-screen h-auto overflow-x-hidden">
+          <Image className="green-blob-2 scale-[1.8] absolute left-3/4 top-1/2 transform -translate-x-[30%] -translate-y-1/2" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
         </div>
         <div className="h-screen">
 
@@ -205,7 +205,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
               width={400}
             /> */}
             {/* <h3 className="project-name text-yellow text-xl">Sarkisova Logo</h3> */}
-            <h3 className="project-name font-ahganirya flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+            <h3 className="project-name font-ahganirya flex justify-center items-end gap-2 text-yellow text-xl text-center hover:cursor-pointer">
                 Sarkisova Logo 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>

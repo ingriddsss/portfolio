@@ -23,6 +23,8 @@ export default function Home() {
     const greenblob = document.getElementsByClassName('green-blob');
     const about = document.getElementsByClassName('about');
 
+    const viewportHeight = window.innerHeight;
+
     gsap.fromTo(yellowblob,
       {
         xPercent: 95,
@@ -31,7 +33,7 @@ export default function Home() {
       {
         xPercent: 45,
         yPercent: 100,
-        scale: 1.3,
+        scale: 1.2,
         scrollTrigger: {
           trigger: ".blob-case",
           start: "top top",
@@ -48,7 +50,7 @@ export default function Home() {
     {
       xPercent: 70,
       yPercent: 160,
-      scale: 1.3,
+      scale: 1.2,
       scrollTrigger: {
         trigger: ".blob-case",
         start: "top top",
@@ -65,7 +67,7 @@ export default function Home() {
       {
         xPercent: -180,
         yPercent: 180,
-        scale: 1.3,
+        scale: 1.2,
         scrollTrigger: {
           trigger: ".blob-case",
           start: "top top",
@@ -91,13 +93,13 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col justify-center items-center overflow-x-hidden">
+    <div className="flex flex-col justify-center items-center w-screen">
     {/* <div className=""> */}
       <div className="home">
-        <div className="blob-case">
-          <Image className="yellow-blob" src="/yellow-bbblurry.svg" alt="yellow blob" width={700} height={700}/>
-          <Image className="teal-blob" src="/teal-bbblurry.svg" alt="teal blob" width={700} height={700}/>
-          <Image className="green-blob" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
+        <div className="blob-case max-w-screen">
+          <Image className="yellow-blob h-auto" src="/yellow-bbblurry.svg" alt="yellow blob" width={700} height={700}/>
+          <Image className="teal-blob h-auto" src="/teal-bbblurry.svg" alt="teal blob" width={700} height={700}/>
+          <Image className="green-blob h-auto" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
         </div>
       
       <div className="hero-info">
@@ -111,7 +113,7 @@ export default function Home() {
       </div>
       
       
-      <div className="about w-[50%] max-xl:w-[65%] max-lg:w-[80%] flex max-lg:flex-col justify-center items-center gap-12 max-sm:h-fit">
+      <div className="about w-[50%] max-xl:w-[65%] max-lg:w-[80%] flex max-lg:flex-col justify-center items-center gap-12 max-sm:h-fit max-lg:mt-[5rem]">
         <Image alt="memoji" className="w-[250px] max-md:w-[225px] max-sm:w-[175px] max-h-[844px]" src="/ingrid-memoji.png" width={800} height={800}></Image>
         <div className="max-sm:w-[95%] max-xl:w-[80%] max-lg:w-[85%]">
             <h3 className="text-lightyellow text-2xl font-bold max-md:text-center">I'm Ingrid and I'm based in Los Angeles!</h3>

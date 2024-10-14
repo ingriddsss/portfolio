@@ -122,9 +122,9 @@ export default function Experience() {
 
   return (
     <div className="experience h-full py-28">
-        <div className="blob-case">
-          <Image className="yellow-blob-2" src="/yellow-bbblurry.svg" alt="yellow blob" width={700} height={700}/>
-          <Image className="teal-blob-2" src="/teal-bbblurry.svg" alt="teal blob" width={700} height={700}/>
+        <div className="blob-case max-w-screen">
+          <Image className="yellow-blob-2 h-auto" src="/yellow-bbblurry.svg" alt="yellow blob" width={700} height={700}/>
+          <Image className="teal-blob-2 h-auto" src="/teal-bbblurry.svg" alt="teal blob" width={700} height={700}/>
           {/* <Image className="green-blob" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/> */}
         </div>
         <div className='header-experience'>

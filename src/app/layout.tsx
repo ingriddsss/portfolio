@@ -53,8 +53,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ahganirya.variable} ${bricolagegrotesque.variable} font-bricolagegrotesque max-sm:overflow-x-hidden`}>
-        <div className="flex w-full min-h-screen">
+      <body className={`${ahganirya.variable} ${bricolagegrotesque.variable} font-bricolagegrotesque max-w-screen overflow-x-hidden`}>
+        <div className="flex min-h-screen">
           {/* <Navbar /> */}
           <div className="flex-1 justify-center">
             {children}
