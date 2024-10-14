@@ -74,7 +74,7 @@ export default function Projects() {
   return (
     <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] max-lg:pt-[15rem] max-2xl:pt-[17rem] xl:pt-[18rem] pb-15 font-bricolagegrotesque">
         <div className="blob-case flex justify-center overflow-visible">
-          <Image className="green-blob-2 absolute left-[65%]" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
+          <Image className="green-blob-2 relative left-[40%]" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
         </div>
         <div className="h-screen">
 
