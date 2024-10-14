@@ -38,7 +38,7 @@ export default function Projects() {
         },
         {
             opacity: 1,
-            width: '50%', // Expand to full width
+            width: '95%', // Expand to full width
             duration: 1.3,
             scrollTrigger: {
                 trigger: projectsContainer,
@@ -72,9 +72,9 @@ export default function Projects() {
 
 
   return (
-    <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] max-lg:pt-[15rem] max-2xl:pt-[17rem] xl:pt-[18rem] pb-15 font-bricolagegrotesque">
-        <div className="blob-case-projects flex justify-center items-center relative w-screen h-auto overflow-x-hidden">
-          <Image className="green-blob-2 scale-[1.8] absolute left-3/4 top-1/2 transform -translate-x-[30%] -translate-y-1/2" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
+    <div className="projects h-screen flex flex-col justify-center items-center pt-28 max-md:pt-[14rem] max-lg:pt-[15rem] max-2xl:pt-[17rem] xl:pt-[18rem] pb-18 font-bricolagegrotesque">
+        <div className="blob-case flex justify-center items-center relative w-screen h-auto">
+          <Image className="green-blob-2 scale-[1.8] absolute left-1/2 top-1/2 transform -translate-x-[10%] -translate-y-1/2 overflow-x-hidden" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/>
         </div>
         <div className="h-screen">
 
@@ -84,12 +84,12 @@ export default function Projects() {
             <hr className='project-header-border border-lightyellow m-auto'/>
         </div>
 
-        <section className="w-[80%] py-5 max-md:py-10 max-lg:py-18 max-sm:w-[85%] m-auto">
+        <section className="w-[100%] py-5 max-md:py-10 max-lg:py-18 max-sm:w-[85%] m-auto">
         {/* <div className="container grid gap-y-20 gap-x-16 px-4 py-10 md:px-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10"> */}
-        <div className="container flex flex-col gap-y-20 gap-x-16 px-4 py-10 md:px-6">
+        <div className="container flex flex-col gap-y-8 gap-x-16 px-4 py-10 md:px-6">
         
           
-          <div className="project flex flex-col justify-center items-center relative group overflow-visible rounded-lg px-5 py-[-2rem]">
+          <div className="project flex flex-col justify-center items-center group overflow-visible rounded-lg">
             <Link className="absolute inset-0 z-10" href="/projects/booked">
               <span className="sr-only">View Project</span>
             </Link>
@@ -108,10 +108,9 @@ export default function Projects() {
                 Booked 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>
-            <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
-              {/* <h3 className="font-semibold text-lg text-green md:text-xl">Booked</h3> */}
+            {/* <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               <p className="project-text text-sm text-lightyellow">A book logging app allows users to search for boots they are reading and add them to their personal collection. Within their collection, users can select a book and make as many notes as they wish. All data is stored locally for convenience and privacy.</p>
-            </div>
+            </div> */}
           </div>
           {/* <hr className='border-lightyellow m-auto w-[50%]'/> */}
 
@@ -136,10 +135,9 @@ export default function Projects() {
                 tsk. 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>
-            <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
-              {/* <h3 className="font-semibold text-lg text-green md:text-xl">tsk.</h3> */}
+            {/* <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               <p className="text-sm text-lightyellow">A progressive web app with ReactJS, Vite, and Tailwind CSS, emphasizing offline accessibility, privacy, and innovative features, gaining traction with a growing community of daily users.</p>
-            </div>
+            </div> */}
           </div>
 
           {/* <hr className='border-lightyellow m-auto w-[50%]'/> */}
@@ -209,10 +207,9 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
                 Sarkisova Logo 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>
-            <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
-              {/* <h3 className="font-semibold text-lg text-green md:text-xl">Sarkisova Logo</h3> */}
+            {/* <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               <p className="text-sm text-lightyellow">I crafted a distinctive logo for a physician's practice, balancing creativity and professionalism to reflect their mission and values.</p>
-            </div>
+            </div> */}
           </div>
             
           {/* <hr className='border-lightyellow m-auto w-[50%]'/> */}
@@ -261,10 +258,9 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
                 Jammming 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>
-            <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
-              {/* <h3 className="font-semibold text-lg text-green md:text-xl">Jammming</h3> */}
+            {/* <div className="project-description p-4 bg-slate-900 rounded-lg w-[50%]">
               <p className="text-sm text-lightyellow">Jammming is a user-friendly web app enabling song lookup, playlist creation, and direct saving to Spotify accounts.</p>
-            </div>
+            </div> */}
           </div>
 
 
