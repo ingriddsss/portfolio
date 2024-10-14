@@ -192,7 +192,7 @@ body {
 }
 
 .green-blob-2 {
-  transform: scale(2);
+  /* transform: scale(1.8); */
 }
 
 .blob-case-contact {
