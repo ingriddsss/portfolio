@@ -80,7 +80,7 @@ export default function Projects() {
 
         {/* <h1 className="text-yellow font-bold text-center text-2xl">Check out the projects that I've worked on!</h1> */}
         <div className='header-projects'>
-            <h1 className="project-header-tag text-yellow text-center text-[1.2rem] m-auto">My Projects</h1>
+            <h1 className="project-header-tag font-ahganirya text-yellow text-center text-[1.2rem] m-auto">My Projects</h1>
             <hr className='project-header-border border-lightyellow m-auto'/>
         </div>
 
@@ -104,7 +104,7 @@ export default function Projects() {
               }}
               width={400}
             /> */}
-            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+            <h3 className="project-name font-ahganirya flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
                 Booked 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>
@@ -132,7 +132,7 @@ export default function Projects() {
               width={400}
             /> */}
             {/* <h3 className="project-name text-yellow text-xl">tsk.</h3> */}
-            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+            <h3 className="project-name font-ahganirya flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
                 tsk. 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>
@@ -205,7 +205,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
               width={400}
             /> */}
             {/* <h3 className="project-name text-yellow text-xl">Sarkisova Logo</h3> */}
-            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+            <h3 className="project-name font-ahganirya flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
                 Sarkisova Logo 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>
@@ -257,7 +257,7 @@ I developed a comprehensive event tracking platform for Glou Beauty, cataloging 
               width={400}
             /> */}
             {/* <h3 className="project-name text-yellow text-xl">Jammming</h3> */}
-            <h3 className="project-name flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
+            <h3 className="project-name font-ahganirya flex justify-center items-end gap-2 text-yellow text-xl hover:cursor-pointer">
                 Jammming 
                 <PiArrowUpRightBold className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </h3>

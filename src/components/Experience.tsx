@@ -128,7 +128,7 @@ export default function Experience() {
           {/* <Image className="green-blob" src="/green-bbblurry.svg" alt="green blob" width={700} height={700}/> */}
         </div>
         <div className='header-experience'>
-            <h1 className="header-tag text-yellow text-center text-[1.2rem]">Experience</h1>
+            <h1 className="header-tag font-ahganirya text-yellow text-center text-[1.2rem]">Experience</h1>
             <hr className='header-border border-lightyellow'/>
         </div>
 
