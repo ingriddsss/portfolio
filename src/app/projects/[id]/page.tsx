@@ -77,8 +77,8 @@ const data: Record<string, Project> = {
     role: "Graphic Designer",
     year: "2024",
     description: "I designed a logo for a physician's private practice that is unlike any other, showcasing a unique blend of creativity and professionalism that captures the essence of the practice's mission and values.",
-    ss2: "/logo with name and title .png",
-    ss1: "/transparent-pic.png",
+    ss1: "/logo with name and title .png",
+    ss2: "/transparent-pic.png",
     ss3: "/transparent-pic.png",
     ss4: "/transparent-pic.png",
     ss5: "/transparent-pic.png"
@@ -145,7 +145,7 @@ export default function Project({params} : ProjectProps) {
   }
 
   return (
-    <div className="specific-project h-full flex flex-col justify-center items-center overflow-y-auto pt-[1rem] pb-[6rem] max-lg:py-[8rem] max-md:[6rem] bg-gray-600 bg-opacity-[30%]">
+    <div className="specific-project h-full flex flex-col justify-center items-center overflow-y-auto pt-[0.2rem] pb-[6rem] max-lg:py-[8rem] max-md:[6rem] bg-gray-600 bg-opacity-[30%]">
         <Navbar />
         <Image alt="project" className="w-[200px] max-md:w-[150px] max-lg:w-[175px] pt-24" src={project.img} width={200} height={200}/>
         <div className="bg-darkblue rounded-xl w-[40%] max-md:w-[70%] max-lg:w-[50%] px-10 py-5 my-10">

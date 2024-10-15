@@ -89,7 +89,7 @@ export default function Projects() {
         <div className="container flex flex-col gap-y-8 gap-x-16 px-4 py-10 md:px-6">
         
           
-          <div className="project flex flex-col justify-center items-center group overflow-visible rounded-lg">
+          <div className="project flex flex-col justify-center items-center relative group overflow-visible rounded-lg">
             <Link className="absolute inset-0 z-10" href="/projects/booked">
               <span className="sr-only">View Project</span>
             </Link>
